@@ -21,6 +21,7 @@
                     <input type="password" class="form-control" style="text-align: center;" name="pw" placeholder="Masukkan password" width="50%">
                 </div>
                 <button type="submit" class="btn btn-primary">Login</button>
+		<a href="signup.php">Daftar</a>
                 <?php if(isset($_GET['pesan'])){
 		            if($_GET['pesan'] == "gagal"){
                         echo "<div class='alert'>Username dan Password tidak sesuai !</div>";
