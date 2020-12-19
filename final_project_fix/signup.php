@@ -4,40 +4,49 @@
 
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>signup</title>
-    <link rel="stylesheet" href="../css/tem.css">
-  </head>
-  <body>
-      <center>
-        <h1>Tambah Produk</h1>
-      <center>
-      <form method="POST" action="php/signup_proses.php" enctype="multipart/form-data" >
-      <section class="base">
-        <div>
-          <label>Nama</label>
-          <input type="text" name="nama" required="" />
-        </div>
-        <div>
-          <label>Username</label>
-          <input type="text" name="username" required="" />
-        </div>
-        <div>
-          <label>Email</label>
-         <input type="text" name="email" required=""/>
-        </div>
-        <div>
-          <label>Alamat</label>
-         <input type="text" name="alamat" required="" />
-        </div>
-        <div>
-          <label>Password</label>
-         <input type="password" name="password" required="" />
-        </div>
-        <div>
-         <button type="submit">Simpan Produk</button>
-        </div>
-        </section>
-      </form>
-  </body>
+<head>
+
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+
+	<title>Daftar baru</title>
+	<script src="js/valid.js"></script>
+
+</head>
+<body>
+<div class="bg">
+	<div class="container">
+		<h1>Daftar baru</h1>
+		<form method="POST" action="php/signup_proses.php" enctype="multipart/form-data">
+			<div class="container-text">
+				<label for="nama">Name: </label>
+				<br>
+				<input type="text" name="nama" required="" />
+				<br>
+
+				<label for="username">Usename: </label>
+				<br>
+				<input type="text" name="username" required="" />
+				<br>
+	
+				<label for="email">Email: </label>
+				<br>
+				<input type="text" name="email" required=""/>
+				<br>
+
+				<label for="alamat">Alamat: </label>
+				<br>
+				<input type="text" name="alamat" required="" />
+				<br>				 
+				
+				<label for="password">Password: </label>
+				<br>	
+				<input type="password" name="password" required="" />
+			 	<br>
+				<button type="submit">Daftar</button>
+			</div>
+			 <a href="login.php">Login</a>
+		</form>
+	</div>
+</div>
+</body>
 </html>
